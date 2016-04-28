@@ -21,3 +21,13 @@ router.post('/upload', upload.single('avatar'), function (req, res, next) {
     }
 });
 ```
+
+form:
+
+```
+<form id='editfile' method='post' action='/system/upload' enctype='multipart/form-data'>
+    <input name="text" type="text"/>
+    选择图片：<input name="avatar" id='upfile' type='file'/>
+    <input type='submit' value='提交'/>
+</form>
+```
