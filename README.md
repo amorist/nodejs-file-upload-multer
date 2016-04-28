@@ -6,6 +6,8 @@ package version:
     "multer": "^1.1.0",
     "md5": "^2.1.0",
 
+
+
 使用方法：
 
 ```
@@ -30,4 +32,10 @@ form:
     选择图片：<input name="avatar" id='upfile' type='file'/>
     <input type='submit' value='提交'/>
 </form>
+```
+
+使用multer上传文件的时候记得去app.js注释如下代码：
+```
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({extended: false}));
 ```
