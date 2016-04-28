@@ -9,6 +9,9 @@ package version:
 使用方法：
 
 ```
+var express = require('express');
+var router = express.Router();
+var upload = require('./fileupload');
 //文件上传服务
 router.post('/upload', upload.single('avatar'), function (req, res, next) {
     if (req.file) {
