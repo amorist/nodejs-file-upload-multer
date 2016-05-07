@@ -16,7 +16,7 @@ var storage = multer.diskStorage({
     //Note:如果你传递的是一个函数，你负责创建文件夹，如果你传递的是一个字符串，multer会自动创建
     destination: config.upload.path,
     //TODO:文件区分目录存放
-    //给上传文件重命名，获取添加后缀名,获取文件MD5,文件重复直接覆盖
+    //给上传文件重命名
     filename: function (req, file, cb) {
         var fileFormat = (file.originalname).split(".");
         cb(null, file.fieldname + "." + fileFormat[fileFormat.length - 1]);
