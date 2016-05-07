@@ -33,9 +33,3 @@ form:
     <input type='submit' value='提交'/>
 </form>
 ```
-
-使用multer上传文件的时候记得去app.js注释如下代码：
-```
-//app.use(bodyParser.json());
-//app.use(bodyParser.urlencoded({extended: false}));
-```
